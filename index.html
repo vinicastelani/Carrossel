@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="loader">&nbsp;</div>
+    </div>
+    <div class="container" id="panel">
+      <div class="arrow_left" onclick="slideLeft()">&nbsp;</div>
+      <div class="row">
+        <div class="column" style="background: #ff0000;">
+          <p id="teste"></p>
+        </div>
+        <div class="column" style="background: #00ff00;">
+          &nbsp;
+        </div>
+        <div class="column" style="background: #0000ff;">
+          &nbsp;
+        </div>
+        <div class="column" style="background: #ff00ff;">
+          &nbsp;
+        </div>
+        <div class="column" style="background: #00ffff;">
+          &nbsp;
+        </div>
+        <div class="column" style="background: #ffffff;">
+          &nbsp;
+        </div>
+      </div>
+      <div class="arrow_right" onclick="slideRight()">&nbsp;</div>
+    </div>
+    <script>
+      getSlicePositions("column");
+      activeSlice();
+      arrowStatus();
+    </script>
+  </body>
+</html>
